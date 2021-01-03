@@ -529,11 +529,12 @@ laki-laki/perempuan :
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*>* @${mem.jid.split('@')[0]}\n`
+						rchoice = Math.floor(Math.random() * list_emoji.length)
+						teks += `┣➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
-				 break
+					break
 				case 'clearall':
 					if (!isOwner) return reply('Perintah ini hanya untuk Owner FADIL')
 					anu = await client.chats.all()
