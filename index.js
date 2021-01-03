@@ -43,9 +43,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:ғᴀᴅɪʟᴋɴᴛʟ\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator DILBOT;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6285343788098:+62 853-4378-8098\n' // JANGAN KEK BABI SU
+            + 'FN:DarinKun\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator RINN-KUN;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6285768105325:+62 857-6810-5325\n' // JANGAN KEK BABI SU
             + 'END:VCARD' // ARIS187 ID
 prefix = '!'
 blocked = []            
@@ -55,11 +55,11 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: 'DILBOT', // TOBAT SU ASU
-    instagram: 'https://instagram.com/fadil_vg78', // INFO JANGAN DI UBAH
-    nomer: 'wa.me/6285343788098', // INFO SU JNGAN DI UBAH
+    A187: 'RINN-KUN', // TOBAT SU ASU
+    instagram: 'https://instagram.com/rin_biji', // INFO JANGAN DI UBAH
+    nomer: 'wa.me/6285768105325', // INFO SU JNGAN DI UBAH
     youtube: 'https://youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg', // KINTIL
-    whatsapp: 'https://chat.whatsapp.com/DSSHmG2KjKJLoFp9B9mkVs', // BABI
+    whatsapp: 'https://chat.whatsapp.com/EBiIJoFWFPh176R3DKs7Bk', // BABI
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -127,7 +127,7 @@ asal     :
 laki-laki/perempuan :
 𝗧𝗲𝗿𝗶𝗺𝗮𝗸𝗮𝘀𝗶𝗵 𝗱𝗮𝗻 𝘀𝗮𝗹𝗮𝗺 𝗸𝗲𝗻𝗮𝗹
 
-𝚈𝚊𝚗𝚐 𝚗𝚐𝚐𝚊𝚔 𝚒𝚗𝚝𝚛𝚘 𝚊𝚗𝚊𝚔 𝚋𝚊𝚋𝚒:>`
+yang gk intro pantatnya bisulan:>`
 						let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -137,7 +137,7 @@ laki-laki/perempuan :
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝗬𝗲𝗲𝘆𝗲 𝗯𝗲𝗯𝗮𝗻 𝗴𝗿𝗼𝘂𝗽 𝗯𝗲𝗿𝗸𝘂𝗿𝗮𝗻𝗴 𝟭,𝘀𝗮𝘆𝗼𝗻𝗮𝗿𝗮🥳 @${num.split('@')[0]} 𝗴𝗮 𝘂𝘀𝗮𝗵 𝗯𝗮𝗹𝗶𝗸 𝗸𝗲𝘀𝗶𝗻𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝗸𝗮𝗸`
+				teks = `YANG KELUAR TITIP GORENGAN🥳 @${num.split('@')[0]} kuaci aja deh gkpp`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -175,7 +175,9 @@ laki-laki/perempuan :
 				wait: '[WAIT] Sedang di proses⏳ silahkan tunggu sebentar!!!',
 				success: '️success kak',
 				error: {
-					stick: '𝗬𝗲𝗮𝗵 𝗴𝗮𝗴𝗮𝗹 ;(, 𝘂𝗹𝗮𝗻𝗴𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝗸𝗮𝗸 ^_^',
+					stick: 'yeay gagal
+
+ ;(, 𝘂𝗹𝗮𝗻𝗴𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝗸𝗮𝗸 ^_^',
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
@@ -265,7 +267,7 @@ laki-laki/perempuan :
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 				case 'blocklist': 
-					teks = '𝗕𝗟𝗢𝗖𝗞 𝗟𝗜𝗦𝗧 𝗗𝗜𝗟𝗕𝗢𝗧:\n'
+					teks = '𝗕𝗟𝗢𝗖𝗞 𝗟𝗜𝗦𝗧 RIN-KUN:\n'
 					for (let block of blocked) {
 						teks += `┣➢ @${block.split('@')[0]}\n`
 					}
